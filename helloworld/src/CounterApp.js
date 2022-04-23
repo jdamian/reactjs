@@ -19,11 +19,11 @@ const CounterApp = ({value}) => {
 
   return (
     <>
-      <h1>Counter App</h1>
-      <h2> {counter} </h2>
-      <button onClick={handleAdd}>+</button>
-      <button onClick={handleReset}>Reset</button>
-      <button onClick={handleSubtract}>-</button>
+      <h1 className="text-3xl text-blue-500">Counter App</h1>
+      <h2 className="text-3xl"> {counter} </h2>
+      <button className="border rounded p-3 mt-5 mx-1 bg-blue-400" onClick={handleAdd}>+</button>
+      <button className="border rounded p-3 mt-5 mx-2 bg-red-400" onClick={handleReset}>Reset</button>
+      <button className="border rounded p-3 mt-5 mx-1 bg-blue-400" onClick={handleSubtract}>-</button>
     </>
   )
 }
